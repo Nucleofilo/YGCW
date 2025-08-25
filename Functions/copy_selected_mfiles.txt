@@ -1,0 +1,26 @@
+@echo off
+setlocal enabledelayedexpansion
+
+:: === USER INPUT ===
+set "DEST_DIR=D:\Papers\Paper_III\Results\Figures\Repo\Functions\"
+set "LIST_FILE=D:\Papers\Paper_III\Results\Figures\Repo\Functions\filelist.txt"
+
+:: Create destination folder if it doesn't exist
+if not exist "%DEST_DIR%" (
+    echo Creating destination folder: %DEST_DIR%
+    mkdir "%DEST_DIR%"
+)
+
+:: Read each full path from the list file and copy it
+for /f "usebackq delims=" %%F in ("%LIST_FILE%") do (
+    set "FILE=%%F"
+    if exist "%%F" (
+        echo Copying %%F ...
+        copy /Y "%%F" "%DEST_DIR%\"
+    ) else (
+        echo File not found: %%F
+    )
+)
+
+echo Done.
+pause
