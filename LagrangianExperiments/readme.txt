@@ -1,0 +1,1 @@
+In this folder we place the python codes used to obtain the lagrangian trajectories of the YGCW during the described events using the OceanParcels framework. 
