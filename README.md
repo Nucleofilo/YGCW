@@ -1,6 +1,6 @@
 # YGCW — MATLAB analysis & figure scripts
 
-This repository contains MATLAB scripts to reproduce figures for the **Frontogenetic origin of GCW-type waters in the Yucatan Channel** study.
+This repository contains MATLAB scripts to reproduce figures for the **Submesoscale Frontogenetic origin of GCW-type waters in the Yucatan Channel** study.
 
 ## Data availability (Zenodo)
 - **Figure 2 (moorings/sections):** 10.5281/zenodo.16923470  
